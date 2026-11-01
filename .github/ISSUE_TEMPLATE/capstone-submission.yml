@@ -1,0 +1,41 @@
+name: Season capstone submission
+description: Finished a season's capstone project? Submit it here to get your season badge.
+title: "[Capstone] Season X: your name"
+labels: ["capstone"]
+body:
+  - type: dropdown
+    id: season
+    attributes:
+      label: Season
+      options:
+        - "Season 0: Orientation"
+        - "Season 1: Data foundations"
+        - "Season 2: Big data"
+        - "Season 3: Machine learning"
+        - "Season 4: Deep learning"
+        - "Season 5: Language, vision and documents"
+        - "Season 6: Generative AI and agents"
+        - "Season 7: Production and responsible AI"
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link to your project
+      description: A public repository, notebook or post.
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: What did you do and what did you learn?
+      description: Three to five sentences is enough.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you submit
+      options:
+        - label: My project has no keys, passwords or personal data in it.
+          required: true

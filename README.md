@@ -1,61 +1,85 @@
-# The AI Mastery Academy: course materials
+# The AI Mastery Academy
 
-Free notebooks, homework and solutions for **The AI Mastery Academy** on YouTube. We learn data science, big data and AI from zero, hands-on with Microsoft Azure.
+**A free course that takes you from zero to a solid understanding of AI, data science and big data, and shows where each idea runs in the real world on Microsoft Azure.**
 
-YouTube: https://www.youtube.com/@TheAIMasteryAcademy
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/TheAIMasteryAcademy/course)
 
-## How the course works
+[Lessons on Substack](https://theaimasteryacademy.substack.com) · [Videos on YouTube](https://www.youtube.com/@TheAIMasteryAcademy) · [Start here](https://theaimasteryacademy.substack.com/p/start-here) · [Discussions](https://github.com/TheAIMasteryAcademy/course/discussions)
 
-Every topic follows the same three steps:
+## Start here
 
-1. **Theory** on the whiteboard, in the video.
-2. **Build it** in Python and on Azure, with the notebooks in this repo.
-3. **Homework** in three levels. Core is for everyone, Stretch goes a bit further, Challenge is for when you want more.
+1. Read the [Start here page](https://theaimasteryacademy.substack.com/p/start-here). It takes two minutes.
+2. Begin with [Lesson 0.1: The Map](seasons/00-orientation/01-the-map), even if you already know some AI.
+3. Star this repository to keep track of new lessons.
 
-Solutions are added one week after each episode, so you get a fair chance to try first.
+## How each lesson works
 
-## The seasons
-
-| Season | Topic | Status |
+| Step | Where | What you get |
 |---|---|---|
-| 0 | Orientation: the map, your AI lab, a first project | In progress |
-| 1 | Data foundations: Python, statistics, SQL, charts | Coming |
-| 2 | Big data: Spark, Microsoft Fabric, Azure Databricks | Coming |
-| 3 | Machine learning: from your first model to deployment on Azure | Coming |
-| 4 | Deep learning | Coming |
-| 5 | Generative AI and agents with Microsoft Foundry | Coming |
-| 6 | Production: MLOps, security and cost | Coming |
+| 1. Watch | YouTube | A whiteboard video of about 10 minutes, built on real data |
+| 2. Read | Substack | The key diagram, short notes and where the idea lives in Azure |
+| 3. Check | This repo | A 3-question quiz before and after the lesson |
+| 4. Practise | This repo | Homework in three levels: Core, Stretch and Challenge |
+| 5. Share | Discussions | Post your homework, ask questions, help others |
 
-## Episodes
+A new lesson comes out every week. Short videos during the week recap one idea each. Solutions to homework are added one week after each lesson, so you get a fair chance to try first.
 
-| # | Title | Video | Materials |
-|---|---|---|---|
-| 1 | The Map: AI vs machine learning vs data science vs big data | [Watch](https://www.youtube.com/@TheAIMasteryAcademy) | [season-0-orientation/ep01-the-map](season-0-orientation/ep01-the-map) |
-| 2 | Set up your AI lab: Python, VS Code, GitHub and a free Azure account | Coming | |
-| 3 | Your first data science project, locally and in Azure Machine Learning | Coming | |
+## Lessons
 
-## Before you use Azure
+| # | Lesson | Video | Lesson post | Materials |
+|---|---|---|---|---|
+| 0.1 | The Map: AI vs machine learning vs data science vs big data | Coming soon | Coming soon | [Open](seasons/00-orientation/01-the-map) |
+| 0.2 | What is data? Rows, columns and types, with real penguin data | Coming soon | Coming soon | [Open](seasons/00-orientation/02-what-is-data) |
+| 0.3 | How machines learn: your first model, explained without code | Coming soon | Coming soon | [Open](seasons/00-orientation/03-how-machines-learn) |
 
-Read [cost-and-cleanup.md](cost-and-cleanup.md) first. Every Azure demo in this course tells you what it costs and how to switch it off.
+## The course map
 
-## Questions and homework
+The course has two tracks. First the theory, then the hands-on track on real Azure. The full episode list is in [seasons/README.md](seasons/README.md).
 
-Post your homework and questions in [Discussions](../../discussions). Please never post keys, passwords, subscription IDs or tenant IDs.
+| Season | Topic | Lessons | Where it lives in Azure | Status |
+|---|---|---|---|---|
+| 0 | Orientation: the big picture | 3 | Where each Azure service fits | In progress |
+| 1 | Data foundations | 6 | Azure SQL Database, Power BI in Microsoft Fabric | Coming |
+| 2 | Big data | 5 | Azure Data Lake Storage, Microsoft Fabric, Azure Databricks | Coming |
+| | First look lab: Python and your first AI model call | 2 | GitHub Codespaces, Microsoft Foundry | Coming |
+| 3 | Machine learning | 7 | Azure Machine Learning | Coming |
+| 4 | Deep learning | 5 | Azure Machine Learning, Microsoft Foundry | Coming |
+| 5 | Language, vision and documents | 4 | Microsoft Foundry tools | Coming |
+| 6 | Generative AI and agents | 6 | Microsoft Foundry, Azure AI Search | Coming |
+| 7 | Production and responsible AI | 4 | Azure Machine Learning, Microsoft Purview, Azure Monitor | Coming |
+| | Hands-on track: four Azure lab tracks | about 24 | See [labs](labs) | Later |
 
-## Credits
+The seasons line up with Microsoft certifications. See [exam-maps](exam-maps) for which lessons prepare you for which exam.
 
-Some lessons build on Microsoft's free, open-source curricula, all under the MIT License, Copyright (c) Microsoft Corporation:
+## Run the notebooks
 
-- [Data Science for Beginners](https://github.com/microsoft/Data-Science-For-Beginners)
-- [ML for Beginners](https://github.com/microsoft/ML-For-Beginners)
-- [AI for Beginners](https://github.com/microsoft/AI-For-Beginners)
-- [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners)
-- [AI Agents for Beginners](https://github.com/microsoft/ai-agents-for-beginners)
+Most theory lessons need no code. Some have an optional notebook for the Challenge level.
 
-When a lesson reuses material from one of them, its folder says so and includes the license.
+- **In your browser:** click **Open in GitHub Codespaces** above. Everything is installed for you. GitHub gives personal accounts a free monthly allowance of Codespaces hours.
+- **On your computer:** install Python 3.12, then run `pip install -r requirements.txt` and open the notebook in VS Code or Jupyter.
 
-## License
+## What's in this repository
 
-Code in this repo is under the MIT License (see [LICENSE](LICENSE)).
+```
+course/
+├── seasons/          lessons, one folder each: notes, quizzes, homework, notebooks
+├── labs/             the hands-on Azure track (later), plus cost and cleanup rules
+├── data/             small open datasets used in the lessons, with their licences
+├── exam-maps/        which lessons prepare you for which Microsoft exam
+├── cheatsheets/      one diagram a week, free to save and share
+└── .devcontainer/    the setup for GitHub Codespaces
+```
 
-This is an independent project, not affiliated with or endorsed by Microsoft. Microsoft, Azure, Microsoft Fabric and Microsoft Foundry are trademarks of the Microsoft group of companies.
+## Community
+
+- Ask questions and post homework in [Discussions](https://github.com/TheAIMasteryAcademy/course/discussions).
+- Found a mistake? Open an [issue](https://github.com/TheAIMasteryAcademy/course/issues/new/choose). See [CONTRIBUTING.md](CONTRIBUTING.md).
+- Please never post keys, passwords, subscription IDs or tenant IDs anywhere.
+
+## Licence and credits
+
+- Code is under the [MIT License](LICENSE).
+- Lesson text, quizzes, diagrams and images are under [CC BY-NC-SA 4.0](LICENSE-CONTENT.md).
+- Datasets keep their own licences. See [CREDITS.md](CREDITS.md).
+
+This is an independent project, not affiliated with or endorsed by Microsoft. Microsoft, Azure and related product names are trademarks of the Microsoft group of companies.

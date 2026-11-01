@@ -1,0 +1,33 @@
+name: Content error
+description: Something in a lesson, quiz or notebook is wrong or unclear.
+title: "[Lesson X.Y] Short description"
+labels: ["content error"]
+body:
+  - type: input
+    id: lesson
+    attributes:
+      label: Which lesson?
+      placeholder: "0.2 What is data?"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong or unclear?
+      description: Quote the sentence or say which quiz question or notebook cell.
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: What should it say?
+      description: A link to a source helps a lot.
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where did you see it?
+      options:
+        - GitHub lesson folder
+        - Substack lesson post
+        - YouTube video
+        - Notebook
